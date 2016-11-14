@@ -16,3 +16,4 @@ namespace RPG.MascotasCR.DS.MascotasCR.Modelos
         public int RolID { get; set; }
 
     }
+}

@@ -7,5 +7,7 @@ namespace RPG.MascotasCR.DS.MascotasCR.Repositorios
     public class Users : ContextoDatos
     {
         public virtual DbSet<User> User { get; set; }
+
+ 
     }
 }
