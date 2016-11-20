@@ -51,13 +51,11 @@
   <ItemGroup>
     <Compile Include="MascotasCR\ContextoDatos.cs" />
     <Compile Include="MascotasCR\Modelos\User.cs" />
-    <Compile Include="MascotasCR\Repositorios\Users.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Scripts\BaseDeDatos.sql" />
   </ItemGroup>
-  <ItemGroup />
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />

@@ -78,6 +78,7 @@
   <ItemGroup>
     <Compile Include="Contratos\IUsuarios.cs" />
     <Compile Include="MascotasCR\Usuarios\Iniciador.cs" />
+    <Compile Include="MascotasCR\Usuarios\Registrador.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Servicios\Usuarios.cs" />
   </ItemGroup>

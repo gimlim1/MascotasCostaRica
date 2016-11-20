@@ -1,5 +1,5 @@
 ﻿using System.Linq;
-using RPG.MascotasCR.DS.MascotasCR.Repositorios;
+using RPG.MascotasCR.DS.MascotasCR;
 using RPG.MascotasCR.DS.MascotasCR.Modelos;
 
 namespace RPG.MascotasCR.BS.Usuarios
@@ -12,7 +12,7 @@ namespace RPG.MascotasCR.BS.Usuarios
             bool esValido = false;
 
             User elUsuario = new User();
-            using (var elRepositorio = new Users())
+            using (var elRepositorio = new ContextoDatos())
             {
                 elUsuario = elRepositorio.User.Where(x => x.Username.Equals(elUsuarioIngresado) &&
                                                      x.Password.Equals(elPasswordIngresado)).FirstOrDefault();

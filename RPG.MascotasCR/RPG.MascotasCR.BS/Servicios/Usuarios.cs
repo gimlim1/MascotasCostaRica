@@ -1,4 +1,6 @@
-﻿using RPG.MascotasCR.BS.Usuarios;
+﻿using System;
+using RPG.MascotasCR.BS.Usuarios;
+using RPG.MascotasCR.DS.MascotasCR.Modelos;
 
 namespace RPG.MascotasCR.BS.Servicios
 {
@@ -16,5 +18,10 @@ namespace RPG.MascotasCR.BS.Servicios
             return esValido;
         }
 
+        public void Registre(User elUsuario)
+        {
+            Registrador elRegistrador = new Registrador();
+            elRegistrador.Registre(elUsuario);
+        }
     }
 }

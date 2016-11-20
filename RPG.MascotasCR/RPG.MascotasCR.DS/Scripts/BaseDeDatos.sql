@@ -24,7 +24,7 @@ SET QUOTED_IDENTIFIER ON
 GO
 
 CREATE TABLE [dbo].[Rol](
-	RolID [int] NOT NULL,
+	RolID [int] IDENTITY(1,1),
 	Nombre [nvarchar](50) NOT NULL,
 
  CONSTRAINT [PK_Rol_RolID] PRIMARY KEY CLUSTERED 
@@ -40,10 +40,10 @@ CREATE TABLE [dbo].[User](
 	UserFirstName [nvarchar](50) NOT NULL,
 	UserLastName [nvarchar] (50) NOT NULL,
 	Email [nvarchar] (50) NOT NULL,
-	Phone [nvarchar] (50) NULL,
+	Phone [nvarchar] (50) NOT NULL,
 	Username [nvarchar] (50) NOT NULL,
 	Password [nvarchar] (50) NOT NULL,
-	Active [int] NULL,
+	Active [int] NOT NULL,
 	RolID [int] NOT NULL
  CONSTRAINT [PK_User_UserID] PRIMARY KEY CLUSTERED 
 (

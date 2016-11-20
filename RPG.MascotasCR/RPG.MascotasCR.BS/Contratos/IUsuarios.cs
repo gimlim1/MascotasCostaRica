@@ -1,4 +1,5 @@
-﻿using System.ServiceModel;
+﻿using RPG.MascotasCR.DS.MascotasCR.Modelos;
+using System.ServiceModel;
 
 namespace RPG.MascotasCR.BS.Contratos
 {
@@ -9,6 +10,9 @@ namespace RPG.MascotasCR.BS.Contratos
 
         [OperationContract]
         bool IniciarSesion(string elUsuario, string elPassword);
+
+        [OperationContract]
+        void Registre(User elUsuario);
 
 
     }
